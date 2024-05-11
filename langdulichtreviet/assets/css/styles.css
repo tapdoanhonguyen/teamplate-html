@@ -529,7 +529,6 @@
 }
 
 @media(max-width: 415px) {
-
     .boxgt {
         width: 250px !important;
         height: 200px !important
@@ -539,7 +538,7 @@
 .bg_home1 {
     width: 100%;
     height: 400px;
-    background: url(/langdulichtreviet/img/bg1.jpg)center top no-repeat;
+    background: url(../images/bg1.jpg)center top no-repeat;
     background-size: cover;
     position: relative;
 }
