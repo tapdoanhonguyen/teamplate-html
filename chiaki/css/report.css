@@ -1,0 +1,665 @@
+.report-form {
+    opacity: 0;
+    pointer-events: none;
+    background: 0 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    transition: 250ms ease-out
+}
+
+#report:checked~.report-form {
+    pointer-events: all;
+    opacity: 1
+}
+
+.header-ticket .ticket-label span a,
+span.requied {
+    color: var(--price)
+}
+
+.header-ticket {
+    margin-bottom: 20px;
+    position: relative
+}
+
+.header-ticket .ticket-label {
+    font-size: 20px;
+    margin: 0;
+    text-align: center
+}
+
+.header-ticket .ticket-label span {
+    display: block;
+    font-size: 14px;
+    margin-top: 6px;
+    font-style: italic;
+    line-height: 1.3
+}
+
+.header-ticket label {
+    line-height: 1;
+    margin-bottom: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9
+}
+
+label[for=report] {
+    color: var(--primary);
+    cursor: pointer
+}
+
+label.new-report-background {
+    position: fixed;
+    background: rgba(0, 0, 0, .5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0
+}
+
+.new-ticket-content {
+    background: #fff;
+    padding: 16px;
+    max-width: 600px;
+    max-height: 92vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 4vh auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .1);
+    position: relative;
+    z-index: 2
+}
+
+.new-ticket-content .form-group,
+.new-ticket-content .product-variant-box,
+.ticket-file-selector {
+    margin-bottom: 8px;
+    position: relative
+}
+
+.new-ticket-content select,
+.ticket-file-selector {
+    border: 1px solid #e1e1e1
+}
+
+.new-ticket-content label {
+    line-height: 1.5;
+    font-weight: 300
+}
+
+.new-ticket-content input,
+.new-ticket-content textarea {
+    border: 1px solid #e1e1e1;
+    padding: 7px 10px
+}
+
+.ticket-file-selector {
+    padding: 0 0 0 16px;
+    border-radius: 3px;
+    width: 100%;
+    display: flex
+}
+
+#selectReportImagesButton {
+    margin-left: auto;
+    border-radius: 0 3px 3px 0;
+    background: #8f8f8f;
+    color: #fff;
+    padding: 7px 10px
+}
+
+#selectReportImagesButton:hover {
+    background: #656565
+}
+
+.form-group.action-button {
+    justify-content: center
+}
+
+@media (min-width:997px) {
+    .is-mobile {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        position: absolute
+    }
+}
+
+.align-c {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.flex-b,
+.flex-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.flex-e {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.flex-c {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.form-group .button,
+.form-group button {
+    height: 40px;
+    border-radius: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 15px;
+    align-self: center;
+    outline: 0;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: text-top
+}
+
+.form-group .button-simple {
+    border: 1px solid #e1e1e1;
+    background: 0 0;
+    margin-right: 8px;
+    color: #000;
+    border-radius: 3px;
+    margin-bottom: 0;
+    display: none
+}
+
+.form-group .btn-hilight-color {
+    background-color: var(--primary);
+    border: none;
+    outline: 0;
+    user-select: none;
+    color: #fff !important;
+    border-radius: 3px;
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: center
+}
+
+.form-group .btn-hilight-color:hover {
+    background-color: var(--primary-dk)
+}
+
+.new-ticket-content .product-variant-box .small {
+    font-size: 100%
+}
+
+.new-ticket-content .product-variant-box .report-error {
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    color: var(--price);
+    font-size: 12px
+}
+
+.new-ticket-content label.ticket-file-selector {
+    flex-wrap: wrap;
+    padding-left: 0
+}
+
+.new-ticket-content label.ticket-file-selector .select-images-note {
+    padding-left: 15px;
+    font-size: 14px
+}
+
+.new-ticket-content label.ticket-file-selector .files {
+    flex: 0 0 100%;
+    border-top: 1px solid #e1e1e1
+}
+
+.new-ticket-content .files span.js-report-image-url {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: cover
+}
+
+.new-ticket-content .files .remove-report-img {
+    background: rgba(24, 158, 255, .5);
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block
+}
+
+.new-ticket-content .files .remove-report-img:hover {
+    background: rgba(24, 158, 255, .85);
+    color: #fff
+}
+
+.new-ticket-content .files .box-preview-report-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 2fr));
+    grid-gap: 12px
+}
+
+.new-ticket-content .product-variant-box.product-variant-image .report-error {
+    top: 1px;
+    bottom: auto
+}
+
+.sent_successfully {
+    opacity: 0;
+    pointer-events: none;
+    background: #fff;
+    position: fixed;
+    z-index: 999999;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    box-shadow: 0 2px 7px rgb(11 11 11 / 10%);
+    transition: 350ms;
+    transform: translate(110%);
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center
+}
+
+#report_successfully:checked~.sent_successfully {
+    pointer-events: all;
+    opacity: 1;
+    transform: translate(0)
+}
+
+.sent_successfully .icon {
+    flex: 0 0 40px;
+    margin-right: 10px;
+    min-width: 0
+}
+
+.sent_successfully .icon svg {
+    width: 30px;
+    height: 30px;
+    color: #3aacff
+}
+
+.sent_successfully .desc {
+    text-align: left
+}
+
+.sent_successfully .desc .small {
+    font-style: italic
+}
+
+.report-product {
+    font-weight: 400;
+    color: #000 !important
+}
+
+@media (max-width:760px) and (orientation:portrait),
+(min-width:640px) and (max-width:992px) and (orientation:landscape) {
+
+    .report-form,
+    .sent_successfully {
+        opacity: 0;
+        pointer-events: none;
+        width: 100%
+    }
+
+    .report-form {
+        background: 0 0;
+        position: fixed;
+        height: 100%;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        transition: 250ms ease-out
+    }
+
+    #report:checked~.report-form {
+        pointer-events: all;
+        opacity: 1
+    }
+
+    span.requied {
+        color: red
+    }
+
+    .header-ticket {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 20px;
+        position: relative
+    }
+
+    .header-ticket .ticket-label {
+        font-size: 17px;
+        margin: 0 0 0 30px;
+        text-align: left
+    }
+
+    .header-ticket label {
+        line-height: 1;
+        margin-bottom: 0;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9
+    }
+
+    label[for=report] {
+        color: #337ab7;
+        cursor: pointer
+    }
+
+    label.new-report-background {
+        position: fixed;
+        background: rgba(0, 0, 0, .5);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0
+    }
+
+    .new-ticket-content {
+        background: #fff;
+        padding: 16px;
+        max-width: 600px;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0 auto;
+        border-radius: 0;
+        box-shadow: 0 8px 10px -5px rgba(0, 0, 0, .2), 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .1);
+        position: relative;
+        z-index: 2
+    }
+
+    #js-form-report-error .form-control {
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 10px;
+        font-size: 14px !important;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 3px !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+
+    .new-ticket-content input,
+    .new-ticket-content select,
+    .new-ticket-content textarea {
+        border: 1px solid #e1e1e1;
+        padding: 7px 10px
+    }
+
+    #js-form-report-error textarea.form-control {
+        height: 60px
+    }
+
+    .new-ticket-content .product-variant-box .small,
+    .new-ticket-content label {
+        line-height: 1.5;
+        font-weight: 300;
+        font-size: 14px
+    }
+
+    .product-variant-heading {
+        display: flex;
+        margin-right: 10px
+    }
+
+    .product-variant-heading span {
+        margin-left: 3px
+    }
+
+    .new-ticket-content select {
+        width: 100%;
+        border-radius: 3px;
+        font-size: 14px
+    }
+
+    .new-ticket-content .form-group,
+    .new-ticket-content .product-variant-box {
+        margin-bottom: 8px;
+        position: relative
+    }
+
+    .form-group .btn-hilight-color {
+        background-color: rgba(24, 158, 255, .85);
+        border: 1px solid rgba(24, 158, 255, .85)
+    }
+
+    .form-group .btn-hilight-color:hover {
+        background-color: #189eff;
+        border: 1px solid #189eff
+    }
+
+    .form-group.action-button {
+        justify-content: center
+    }
+
+    #selectReportImagesButton {
+        margin-left: auto;
+        border-radius: 0 3px 3px 0;
+        background: #8f8f8f;
+        color: #fff;
+        padding: 7px 10px;
+        display: flex
+    }
+
+    #selectReportImagesButton:hover {
+        background: #656565
+    }
+
+    #selectReportImagesButton .is-mobile {
+        margin-right: 5px
+    }
+
+    .align-c {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .flex-b,
+    .flex-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+    }
+
+    .flex-e {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .flex-c {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .form-group .button,
+    .form-group button {
+        height: 40px;
+        line-height: 40px;
+        border-radius: 3px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0 15px;
+        align-self: center;
+        outline: 0;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: text-top;
+        margin-bottom: 0;
+        margin-top: 10px
+    }
+
+    .form-group .button-simple {
+        border: 1px solid var(--flash);
+        background: 0 0;
+        margin-right: 8px;
+        color: #000;
+        border-radius: 3px;
+        margin-bottom: 0;
+        display: none
+    }
+
+    .form-group .btn-hilight-color {
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        color: #fff !important;
+        border-radius: 3px;
+        padding-left: 24px;
+        padding-right: 24px;
+        text-align: center
+    }
+
+    .box-flex {
+        display: flex;
+        align-items: center
+    }
+
+    .box-flex label {
+        flex: 0 0 100px
+    }
+
+    .new-ticket-content .product-variant-box.box-flex {
+        margin-bottom: 12px
+    }
+
+    .new-ticket-content .product-variant-box .small {
+        font-size: 100%
+    }
+
+    .new-ticket-content .product-variant-box .report-error {
+        position: absolute;
+        top: 0;
+        right: 7px;
+        color: var(--price);
+        font-size: 11px
+    }
+
+    .new-ticket-content .product-variant-box .report-error.js-error-report-image {
+        position: relative;
+        top: 0;
+        right: 0;
+        color: var(--price);
+        font-size: 12px
+    }
+
+    .new-ticket-content label.ticket-file-selector {
+        flex-wrap: wrap;
+        padding-left: 0
+    }
+
+    .new-ticket-content label.ticket-file-selector .select-images-note {
+        padding-left: 15px;
+        font-size: 14px
+    }
+
+    .new-ticket-content label.ticket-file-selector .files {
+        flex: 0 0 100%;
+        border-top: 1px solid #e1e1e1
+    }
+
+    .new-ticket-content label.ticket-file-selector .files span.js-report-image-url {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background-size: cover
+    }
+
+    .sent_successfully {
+        background: #fff;
+        position: fixed;
+        z-index: 999999;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0 2px 7px rgb(11 11 11 / 10%);
+        transition: 350ms;
+        transform: translate(110%);
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        display: flex;
+        align-items: center
+    }
+
+    #report_successfully:checked~.sent_successfully {
+        pointer-events: all;
+        opacity: 1;
+        transform: translate(0)
+    }
+
+    .sent_successfully .icon {
+        flex: 0 0 40px;
+        margin-right: 10px;
+        min-width: 0
+    }
+
+    .sent_successfully .icon svg {
+        width: 30px;
+        height: 30px;
+        color: #3aacff
+    }
+
+    .sent_successfully .desc {
+        text-align: left;
+        font-size: 14px
+    }
+
+    .sent_successfully .desc .small {
+        font-style: italic
+    }
+}
+
+#js-form-report-error .btn-submit.disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    cursor: unset
+}
