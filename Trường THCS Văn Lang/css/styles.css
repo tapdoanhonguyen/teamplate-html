@@ -454,6 +454,7 @@ ul.slimmenu.collapsed li>ul {
 }
 
 .infor {
+    margin-top: 10px;
     height: 100%;
     border: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
@@ -628,7 +629,7 @@ ul.slimmenu.collapsed li>ul {
 
 .list-notifi {
     padding: 10px;
-
+    height: 243px;
 }
 
 .list-notifi li {
@@ -637,6 +638,15 @@ ul.slimmenu.collapsed li>ul {
 }
 
 .list-notifi a {
+    color: #333333;
+}
+
+.custom-navigation a {
+    border: 1px solid #9a9b9c;
+    float: right;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 2px;
     color: #333333;
 }
 
@@ -684,7 +694,7 @@ ul.slimmenu.collapsed li>ul {
 .panel {
     margin-bottom: 18px;
     background-color: #fff;
-    border: 1px solid transparent;
+    border: 1px solid #e2e2e2;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -693,7 +703,7 @@ ul.slimmenu.collapsed li>ul {
 .panel-heading {
     font-size: 14px;
     font-weight: bold;
-    border-bottom: 1px solid #0078d3;
+    border-bottom: 1px solid #0078d3 !important;
     background: none !important;
     background: #fff;
     padding: 4px 0px;
@@ -722,11 +732,17 @@ ul.slimmenu.collapsed li>ul {
 .albums .panel-body {
     padding: 10px 0px;
     position: relative;
+    height: 145px;
+    width: 95%;
+    padding: 0 10px;
+    left: 2.5%;
+    top: 0px;
 }
 
 .slide-img2 {
+    padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: auto;
 }
@@ -734,15 +750,34 @@ ul.slimmenu.collapsed li>ul {
     margin: 0px 5px;
 }
 
-
 .img-thumbnail {
-
     background-color: #d0d0d0;
     border: none;
     border-radius: 3px;
     max-width: 100%;
     padding: 1px;
+}
 
+.albums-back {
+    float: left;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(/img/arrow.png);
+    height: 45px;
+    width: 26px;
+    top: 40px;
+    left: -20px;
+}
+
+.albums-forward {
+    float: right;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(/img/arrow2.png);
+    height: 45px;
+    width: 26px;
+    top: 40px;
+    left: 100%;
 }
 
 
