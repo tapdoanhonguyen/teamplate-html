@@ -11,4 +11,3 @@ $('.slide-img1').slick({
     slidesToScroll: 4
     });
 
-//   $('.slide col-sm-12 .col-md-12').slick();
