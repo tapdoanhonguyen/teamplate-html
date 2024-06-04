@@ -337,11 +337,6 @@ ul.slimmenu.collapsed li>ul {
     position: static;
 }
 
-.row {
-    margin-left: -5px;
-    margin-right: -5px
-}
-
 .text-center {
     text-align: center
 }
@@ -454,6 +449,7 @@ ul.slimmenu.collapsed li>ul {
 }
 
 .infor {
+    margin-top: 10px;
     height: 100%;
     border: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
@@ -461,7 +457,6 @@ ul.slimmenu.collapsed li>ul {
     padding: 1px 5px 1px;
     position: relative;
     margin-bottom: 20px !important;
-    margin-top: 10px;
 }
 
 .infor .current-time {
@@ -485,6 +480,7 @@ ul.slimmenu.collapsed li>ul {
     border-radius: 0px;
     margin-bottom: 20px;
     padding: 5px;
+    height: 353.31px;
 }
 
 .news-slide {
@@ -607,11 +603,12 @@ ul.slimmenu.collapsed li>ul {
     padding-left: 10px !important;
 }
 
+
 .new-notification-wrapper {
     border: 1px solid #e2e2e2;
     border-radius: 0px;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .new-notification-wrapper .title {
@@ -629,16 +626,6 @@ ul.slimmenu.collapsed li>ul {
 
 .list-notifi {
     padding: 10px;
-    height: 233px;
-}
-
-.list-notifi li {
-    padding: 10px 10px 10px 25px;
-    background: url(/img/icon_list_groups.png) no-repeat 0px 13px;
-}
-
-.list-notifi a {
-    color: #333333;
 }
 
 .custom-navigation a {
@@ -647,6 +634,15 @@ ul.slimmenu.collapsed li>ul {
     padding: 5px 10px;
     margin-left: 10px;
     border-radius: 2px;
+    color: #333333;
+}
+
+.list-notifi li {
+    padding: 10px 10px 10px 25px;
+    background: url(/img/icon_list_groups.png) no-repeat 0px 13px;
+}
+
+.list-notifi a {
     color: #333333;
 }
 
@@ -667,24 +663,12 @@ ul.slimmenu.collapsed li>ul {
 /* Tùy chỉnh dot navigation */
 .slick-dots {
     display: flex !important;
-    justify-content: left;
+    justify-content: center;
 }
 
 .slick-dots li {
     margin: 0 5px;
-    font-size: 14px;
-    font-weight: normal;
-    padding: 0 5px;
-    background-color: #cccccc;
-    color: #cccccc;
-}
-
-.slick-dots li button {
-    font-size: 14px;
-    font-weight: normal;
-    padding: 0 5px;
-    background-color: #cccccc;
-    color: #cccccc;
+    /* Khoảng cách giữa các dots */
 }
 
 .slick-dots li button:before {
@@ -804,4 +788,62 @@ ul.slimmenu.collapsed li>ul {
 
 #main {
     width: 100%;
+}
+/* news */
+.article-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.comment {
+    margin-bottom: 15px;
+
+}
+
+div.news_column .panel-body {
+    padding: 10px 5px;
+}
+
+.related a {
+    color: #3b3b3b;
+    padding-left: 6px;
+    text-align: left;
+}
+
+.panel-body.other-news>div.clearfix {
+    margin-bottom: 15px;
+}
+
+div.news_column ul.related li {
+    padding: 2px 4px 0 20px;
+    margin-bottom: 10px;
+}
+
+div.news_column ul.related {
+    float: left;
+    border-top: 1px dashed #dadada;
+    padding-top: 10px !important;
+    margin-top: 10px;
+}
+
+.block-law .m-bottom {
+    padding-left: 25px;
+    background: url(/img/icon_laws.png) no-repeat;
+}
+
+.m-bottom {
+    margin-bottom: 10px !important;
+}
+
+.block-law .m-bottom h3 a {
+    color: #333333;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.text-muted {
+    color: #999;
+}
+
+div.news_column ul.related li {
+    padding: 2px 4px 0 20px;
 }

@@ -1,19 +1,4 @@
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=671a594eff14a52d359e)
- * Config saved to config.json and https://gist.github.com/671a594eff14a52d359e
- */
-/*!
- * Bootstrap v3.3.5 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -6232,7 +6217,7 @@ a.thumbnail.active {
 
 .media-left,
 .media>.pull-left {
-    padding-right: 10px
+    padding-right: 10px;
 }
 
 .media-left,
