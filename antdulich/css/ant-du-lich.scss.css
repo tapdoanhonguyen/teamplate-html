@@ -78,7 +78,7 @@ a:hover,a:focus {
 
 header {
     background-color: rgba(0,0,0,0.45);
-    background-image: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/breadcrumb.png?1705894497089);
+    background-image: url("/antdulich/diem-den-uu-thich/tour-category-item-gradient.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative
@@ -512,7 +512,7 @@ footer .site-footer {
 
 @media (min-width: 767px) {
     footer .site-footer {
-        background-image:url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/footer.jpg?1705894497089);
+        background-image:url(/antdulich/images/footer.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center center;
@@ -2354,7 +2354,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
 
 .section_tour-inbound {
     padding-bottom: 60px;
-    background-image: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/sec_inbound_tour_bg.png?1705894497089);
+    background-image: url(/antdulich/images/sec_inbound_tour_bg.png);
     background-size: cover;
     background-position: center center;
     transform: translate(0px, -12.1167px)
@@ -3643,7 +3643,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
 
 @media (min-width: 767px) {
     .section_tour-holiday {
-        background-image:url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/sec_video_tour_bg.jpg?1705894497089)
+        background-image:url(/antdulich/images/sec_video_tour_bg.png)
     }
 }
 
@@ -3860,7 +3860,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/tour-category-item-gradient.png?1705894497089) bottom repeat-x
+    background: url(/antdulich/diem-den-uu-thich/tour-category-item-gradient.png) bottom repeat-x
 }
 
 .section_tour-location .section-location-owl .tourmaster-tour-category-item-wrap .tourmaster-tour-category-head {
@@ -4638,7 +4638,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
 
 .c-menu--slide-left .la-nav-top-login {
     padding: 30px 15px;
-    background: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/br-nav-slide-left.jpg?1705894497089) no-repeat;
+    background: url(/antdulich/images/br-nav-slide-left.jpg) no-repeat;
     min-height: 180px;
     background-size: cover;
     box-shadow: 0px 1px 2px #999
@@ -5333,7 +5333,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
 }
 
 .the-article-tools li.btnZalo .ti-zalo {
-    background: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/icon_zalomessage.png?1705894497089) no-repeat 50% 50%;
+    background: url(/antdulich/images/icon_zalomessage.png) no-repeat 50% 50%;
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -5358,7 +5358,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
 }
 
 .the-article-tools li.btnFacebook .ti-facebook {
-    background: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/messenger.svg?1705894497089) no-repeat 50% 50%;
+    background: url(/antdulich/images/messenger.svg) no-repeat 50% 50%;
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -5461,7 +5461,7 @@ footer .site-footer .list-menu li a:hover,footer .site-footer .list-menu li a:fo
 }
 
 .back-zalo a .ti-zalo {
-    background: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/icon_zalomessage.png?1705894497089) no-repeat 50% 50%;
+    background: url(/antdulich/images/icon_zalomessage.png) no-repeat 50% 50%;
     width: 20px;
     height: 20px;
     display: inline-block;
