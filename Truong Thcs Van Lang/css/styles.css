@@ -337,11 +337,6 @@ ul.slimmenu.collapsed li>ul {
     position: static;
 }
 
-.row {
-    margin-left: -5px;
-    margin-right: -5px
-}
-
 .text-center {
     text-align: center
 }
@@ -485,6 +480,7 @@ ul.slimmenu.collapsed li>ul {
     border-radius: 0px;
     margin-bottom: 20px;
     padding: 5px;
+    height: 353.31px;
 }
 
 .news-slide {
@@ -827,4 +823,27 @@ div.news_column ul.related {
     border-top: 1px dashed #dadada;
     padding-top: 10px !important;
     margin-top: 10px;
+}
+
+.block-law .m-bottom {
+    padding-left: 25px;
+    background: url(/img/icon_laws.png) no-repeat;
+}
+
+.m-bottom {
+    margin-bottom: 10px !important;
+}
+
+.block-law .m-bottom h3 a {
+    color: #333333;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.text-muted {
+    color: #999;
+}
+
+div.news_column ul.related li {
+    padding: 2px 4px 0 20px;
 }
