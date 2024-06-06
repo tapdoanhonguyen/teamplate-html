@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-support">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="logo">
+                            <a href="/" class="logo-wrapper ">
+                                <img src="./images/logo.webp" alt="logo Delta Du học">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-18">
+                        <div class="support work">
+                            <p>Thời gian làm việc</p>
+                            <span class="not">T2 - CN, 9h - 17h</span>
+                        </div>
+                        <div class="support">
+                            <p>Tư vấn du học</p>
+                            <span>Gọi ngay 19006750</span>
+                        </div>
+                        <div class="support">
+                            <p>Chăm sóc khách hàng</p>
+                            <span>Hotline 1900 6750</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-24">
+                        <div class="bg-header-nav">
+                            <nav class="header-nav">
+                                <ul class="item_big">
+                                    <li class="nav-item">
+                                        <a class="a-img" href="/"><span>Trang chủ</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="a-img" href="/gioi-thieu.html"><span>Giới thiệu</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="a-img" href="/tin-tuc.html"><span>Tin tức </span><i
+                                                class="fa fa-angle-down"></i></a>
+                                        <ul class="item_small">
+                                            <li>
+                                                <a href="/cam-nang-du-hoc.html" title="">Cẩm nang du học </a>
+                                            </li>
+                                            <li>
+                                                <a href="/tin-video.html" title="">Tin video </a>
+                                            </li>
+                                            <li>
+                                                <a href="/cau-chuyen-hoc-vien.html" title="">Câu chuyện học viên </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="a-img" href="/co-hoi-hop-tac.html"><span>Cơ hội hợp tác</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item active ">
+                                        <a class="a-img" href="/lich-su-kien.html"><span>Lịch sự kiện</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="a-img" href="/quoc-gia.html"><span>Quốc gia</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="a-img" href="/dao-tao.html"><span>Đào tạo</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="a-img" href="/lien-he.html"><span>Liên hệ</span></a>
+                                        <ul class="item_small">
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="col-search-engine">
+                                <div class="iconsearch"><i class="fa fa-search"></i></div>
+                                <div class="header_search">
+                                    <form class="input-group search-bar">
+                                        <input type="hidden" name="type" value="article">
+                                        <input type="search" name="query" value="" placeholder="Tìm kiếm... "
+                                            class="input-group-field st-default-search-input search-text"
+                                            autocomplete="off" required="">
+                                        <span class="input-group-btn">
+                                            <button class="btn icon-fallback-text">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        document.querySelector('.iconsearch').addEventListener('click', function () {
+            document.querySelector('.header_search').classList.toggle('show');
+        });
+    </script>
+    <div id="main">
+        <section class="bread-crumb">
+            <div class="container">
+                <div class="rows">
+                    <div class="col-xs-24">
+                        <ul class="breadcrumb">
+                            <li class="home">
+                                <a href="/index.html"><span>Trang chủ</span></a>
+                                <span class="mr_lr"><i class="fa fa-angle-right"></i></span>
+                            </li>
+                            <li><strong><span>Lịch sự kiện</span></strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <div class="title-intro">Tin tức</div>
+                    <div class="left-content col-md-6 col-lg-6 col-sm-24 col-xs-24">
+                        <div class="aside-item sidebar-category collection-category">
+                            <div class="aside-title">
+                                <h2 class="title-head margin-top-0"><span>Danh mục tin tức</span></h2>
+                            </div>
+                            <div class="aside-content">
+                                <nav class="nav-category navbar-toggleable-md">
+                                    <ul class="nav navbar-pills">
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/">Trang chủ
+                                            </a>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/gioi-thieu">Giới thiệu
+                                            </a>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a href="/tin-tuc" class="nav-link">Tin tức
+                                            </a>
+                                            <i class="fa fa-angle-down"></i>
+                                            <ul class="dropdown-menu">
+                                                <li class="nav-item lv2">
+                                                    <a class="nav-link" href="/cam-nang-du-hoc">Cẩm nang du học
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item lv2">
+                                                    <a class="nav-link" href="/tin-video">Tin video
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item lv2">
+                                                    <a class="nav-link" href="/cau-chuyen-hoc-vien">Câu chuyện học viên
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/co-hoi-hop-tac">Cơ hội hợp tác
+                                            </a>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/lich-su-kien">Lịch sự kiện
+                                            </a>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/quoc-gia">Quốc gia
+                                            </a>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/dao-tao">Đào tạo
+                                            </a>
+                                        </li>
+                                        <li class="nav-item lv1">
+                                            <a class="nav-link" href="/lien-he">Liên hệ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="aside-item">
+
+                            <div class="aside-title main margin-bottom-15">
+                                <h2><a href="tin-tuc" title="Bài viết nổi bật">Bài viết nổi bật</a></h2>
+                            </div>
+                            <div class="list-blogs-main">
+                                <article class="blog-item blog-item-list ">
+                                    <div class="blog-item-thumbnail img1">
+                                        <a href="#"
+                                            title="Hội thảo Uni of Western Australia: du học, học bổng, định cư 2019">
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="">
+                                                <source media="(min-width: 481px) and (max-width: 767px)" srcset="">
+                                                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+                                                <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="">
+                                                <source media="(min-width: 1200px)" srcset="">
+                                                <img src="./images/tin-tuc-01.webp" style="max-width:100%;"
+                                                    class="img-responsive"
+                                                    alt="Gặp gỡ đại diện trường Trinity College đầu năm 2019">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="ct_list_item">
+                                        <h3 class="blog-item-name"><a
+                                                href="/hoi-thao-uni-of-western-australia-du-hoc-hoc-bong-dinh-cu-2019"
+                                                title="Hội thảo Uni of Western Australia: du học, học bổng, định cư 2019">Hội
+                                                thảo Uni of Western Australia: du học, học bổng, định cư
+                                                2019</a></h3>
+                                    </div>
+                                </article>
+                                <article class="blog-item blog-item-list ">
+                                    <div class="blog-item-thumbnail img1">
+                                        <a href="/hoc-bong-toan-phan-trung-hoc-cong-lap-my-2019"
+                                            title="Học bổng toàn phần Trung học Công lập Mỹ 2019">
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="">
+                                                <source media="(min-width: 481px) and (max-width: 767px)" srcset="">
+                                                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+                                                <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="">
+                                                <source media="(min-width: 1200px)" srcset="">
+                                                <img src="./images/tin-tuc-02.webp" style="max-width:100%;"
+                                                    class="img-responsive"
+                                                    alt="Gặp gỡ đại diện trường Trinity College đầu năm 2019">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="ct_list_item">
+                                        <h3 class="blog-item-name"><a
+                                                href="/hoc-bong-toan-phan-trung-hoc-cong-lap-my-2019"
+                                                title="Học bổng toàn phần Trung học Công lập Mỹ 2019">Học bổng
+                                                toàn phần Trung học Công lập Mỹ 2019</a></h3>
+                                    </div>
+                                </article>
+                                <article class="blog-item blog-item-list ">
+                                    <div class="blog-item-thumbnail img1">
+                                        <a href="#"
+                                            title="Môi trường học an toàn, tiện lợi cho du học sinh tại UTS Insearch">
+
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="">
+                                                <source media="(min-width: 481px) and (max-width: 767px)" srcset="">
+                                                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+                                                <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="">
+                                                <source media="(min-width: 1200px)" srcset="">
+                                                <img src="./images/tin-tuc-03.webp" style="max-width:100%;"
+                                                    class="img-responsive"
+                                                    alt="Gặp gỡ đại diện trường Trinity College đầu năm 2019">
+                                            </picture>
+
+                                        </a>
+                                    </div>
+                                    <div class="ct_list_item">
+                                        <h3 class="blog-item-name"><a href="#"
+                                                title="Môi trường học an toàn, tiện lợi cho du học sinh tại UTS Insearch">Môi
+                                                trường học an toàn, tiện lợi cho du học sinh tại UTS
+                                                Insearch</a></h3>
+                                    </div>
+                                </article>
+                                <article class="blog-item blog-item-list ">
+                                    <div class="blog-item-thumbnail img1">
+                                        <a href="#">
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="">
+                                                <source media="(min-width: 481px) and (max-width: 767px)" srcset="">
+                                                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+                                                <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="">
+                                                <source media="(min-width: 1200px)" srcset="">
+                                                <img src="./images/tin-tuc-04.webp" style="max-width:100%;"
+                                                    class="img-responsive"
+                                                    alt="Gặp gỡ đại diện trường Trinity College đầu năm 2019">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="ct_list_item">
+                                        <h3 class="blog-item-name"><a href="#"
+                                                title="Trở thành công dân toàn cầu với Trại hè Quân đội Singapore mùa cuối">Trở
+                                                thành công dân toàn cầu với Trại hè Quân đội Singapore mùa
+                                                cuối</a></h3>
+                                    </div>
+                                </article>
+                                <article class="blog-item blog-item-list ">
+                                    <div class="blog-item-thumbnail img1">
+                                        <a href="#" title="Gặp gỡ đại diện trường Trinity College đầu năm 2019">
+
+                                            <picture>
+                                                <source media="(max-width: 480px)" srcset="">
+                                                <source media="(min-width: 481px) and (max-width: 767px)" srcset="">
+                                                <source media="(min-width: 768px) and (max-width: 1023px)" srcset="">
+                                                <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="">
+                                                <source media="(min-width: 1200px)" srcset="">
+                                                <img src="./images/tin-tuc-05.webp" style="max-width:100%;"
+                                                    class="img-responsive"
+                                                    alt="Gặp gỡ đại diện trường Trinity College đầu năm 2019">
+                                            </picture>
+
+                                        </a>
+                                    </div>
+                                    <div class="ct_list_item">
+                                        <h3 class="blog-item-name"><a href="#"
+                                                title="Gặp gỡ đại diện trường Trinity College đầu năm 2019">Gặp
+                                                gỡ đại diện trường Trinity College đầu năm 2019</a></h3>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-content col-lg-18 col-md-18 col-sm-24 col-xs-24">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="site-footer">
+            <div class="mid-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-24 col-sm-12 col-md-8 col-lg-8">
+                            <div class="widget-ft first">
+                                <h4 class="title-menu">
+                                    <span>
+                                        THÔNG TIN CHUNG
+                                    </span>
+                                </h4>
+                                <b>Trụ sở chính:</b>
+                                <span>An Thượng, Hà Nội</span>
+                                <b>Văn phòng đại diện</b>
+                                <p>Chi nhánh Đà Nẵng <i class="fas fa-map-pin"></i></p>
+                                <span>
+
+                                    5-6 Nguyễn Văn Linh, Nam Dương, Hải Châu, Đà Nẵng
+
+                                </span>
+                                <p>Chi nhánh HCM <i class="fas fa-map-pin"></i></p>
+                                <span>
+
+                                    Quận 1, Phường 15, Bình Thạnh, Hồ Chí Minh,
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xs-24 col-sm-12 col-md-6 col-lg-6">
+                            <div class="widget-ft first">
+                                <h4 class="title-menu">
+                                    <span>
+                                        HƯỚNG DẪN
+                                    </span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Cơ hội hợp tác <i class="fas fa-map-pin"></i></a></li>
+                                    <li><a href="#">Lịch sự kiện</a></li>
+                                    <li><a href="#">Quốc gia <i class="fas fa-map-pin"></i></a></li>
+                                    <li><a href="#">Đào tạo</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-24 col-sm-12 col-md-6 col-lg-6">
+                            <div class="widget-ft first">
+                                <h4 class="title-menu">
+                                    <span>
+                                        CHÍNH SÁCH
+                                    </span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">Thông tin visa</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Cơ hội hợp tác <i class="fas fa-map-pin"></i></a></li>
+                                    <li><a href="#">Lịch sự kiện</a></li>
+                                    <li><a href="#">Quốc gia <i class="fas fa-map-pin"></i></a></li>
+                                    <li><a href="#">Đào tạo</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-24 col-sm-12 col-md-4 col-lg-4">
+                            <div class="widget-ft first">
+                                <h4 class="title-menu">
+                                    <span>
+                                        THÔNG TIN VISA
+                                    </span>
+                                </h4>
+                                <ul>
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Cơ hội hợp tác <i class="fas fa-map-pin"></i></a></li>
+                                    <li><a href="#">Lịch sự kiện</a></li>
+                                    <li><a href="#">Quốc gia <i class="fas fa-map-pin"></i></a></li>
+                                    <li><a href="#">Đào tạo</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© Bản quyền thuộc về <span class="dealta-du-hoc">Delta Du học</span> | Cung cấp bởi <a
+                            href="#">Sapo</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
