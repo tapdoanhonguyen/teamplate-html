@@ -4,7 +4,7 @@
  */
  @font-face {
     font-family: 'FontAwesome';
-    src: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/fontawesome-webfont.woff?1705894497089);
+    src: url(/antdulich/fonts/fontawesome-webfont.woff);
     font-display: swap;
     font-weight: normal;
     font-style: normal
@@ -3569,7 +3569,7 @@ select {
     -moz-appearance: none;
     appearance: none;
     background-position: right center;
-    background-image: url("//bizweb.dktcdn.net/100/299/077/themes/642224/assets/ico-select.png?1705894497089");
+    background-image: url("/antdulich/images/ico-select.png");
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-color: #fff !important;
@@ -8478,13 +8478,13 @@ textarea.form-control {
 }
 
 .address-title button.btn-edit {
-    background-image: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/btn-edit.png?1705894497089);
+    background-image: url(/antdulich/images/btn-edit.png);
     background-repeat: no-repeat;
     background-position: center
 }
 
 .address-title button.btn-delete {
-    background-image: url(//bizweb.dktcdn.net/100/299/077/themes/642224/assets/btn-delete.png?1705894497089);
+    background-image: url(/antdulich/images/btn-delete.png);
     background-repeat: no-repeat;
     background-position: center
 }
