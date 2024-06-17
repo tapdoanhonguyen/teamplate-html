@@ -613,11 +613,29 @@ function action(current,datasection){
 }
 // Get content cho tab
 function getContentTab(url,selector){
-	url = url+"?view=ajaxload";
-
 	var dataLgg = $(selector).parent().find('.tab-1 .owl-carousel').attr('data-lgg-items');
 	var loadding = '<div class="a-center"><svg height=30px style="enable-background:new 0 0 50 50"version=1.1 viewBox="0 0 24 30"width=24px x=0px xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:xlink=http://www.w3.org/1999/xlink y=0px><rect fill=#333 height=10 opacity=0.2 width=4 x=0 y=10><animate attributeName=opacity attributeType=XML begin=0s dur=0.6s repeatCount=indefinite values="0.2; 1; .2"/><animate attributeName=height attributeType=XML begin=0s dur=0.6s repeatCount=indefinite values="10; 20; 10"/><animate attributeName=y attributeType=XML begin=0s dur=0.6s repeatCount=indefinite values="10; 5; 10"/></rect><rect fill=#333 height=10 opacity=0.2 width=4 x=8 y=10><animate attributeName=opacity attributeType=XML begin=0.15s dur=0.6s repeatCount=indefinite values="0.2; 1; .2"/><animate attributeName=height attributeType=XML begin=0.15s dur=0.6s repeatCount=indefinite values="10; 20; 10"/><animate attributeName=y attributeType=XML begin=0.15s dur=0.6s repeatCount=indefinite values="10; 5; 10"/></rect><rect fill=#333 height=10 opacity=0.2 width=4 x=16 y=10><animate attributeName=opacity attributeType=XML begin=0.3s dur=0.6s repeatCount=indefinite values="0.2; 1; .2"/><animate attributeName=height attributeType=XML begin=0.3s dur=0.6s repeatCount=indefinite values="10; 20; 10"/><animate attributeName=y attributeType=XML begin=0.3s dur=0.6s repeatCount=indefinite values="10; 5; 10"/></rect></svg></div>';
 
+	/* Đoạn code mới */
+	new Promise((resolve) => {
+		$(selector).html(loadding);
+		setTimeout(resolve, 2000);
+	})
+	.then(() => {
+		return fetch(url);
+	})
+	.then(response => response.text())
+	.then(data => {
+		$(selector).html(data);
+		ajaxCarousel(selector,dataLgg);			
+		$('[data-toggle="tooltip"]').tooltip();
+		if(window.BPR)
+			return window.BPR.initDomEls(), window.BPR.loadBadges();
+	})
+	.catch(error => console.error('Error loading file:', error));
+
+	// Bỏ đoạn này mới chạy được offline.
+	/*
 	$.ajax({
 		type: 'GET',
 		url: url,
@@ -626,8 +644,8 @@ function getContentTab(url,selector){
 		},
 		success: function(data) {
 			var content = $(data);
-
 			$(selector).html(content.html());
+			console.log(selector)
 			ajaxCarousel(selector,dataLgg);			
 			$('[data-toggle="tooltip"]').tooltip();
 			if(window.BPR)
@@ -635,10 +653,10 @@ function getContentTab(url,selector){
 		},
 		dataType: "html"
 	});
+	*/
 }
 // Ajax carousel
 function ajaxCarousel(selector,dataLgg){
-
 	$(selector+' .owl-carousel.ajax-carousel').each( function(){
 		var xss_item = $(this).attr('data-xss-items');
 		var xs_item = $(this).attr('data-xs-items');
