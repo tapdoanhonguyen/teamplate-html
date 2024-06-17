@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-10 col-md-10 hidden-xs"><i class="fa fa-globe"></i> Chào mừng bạn đến
+                        với
+                        Bean Hotel!</div>
+                    <div class="col-xl-14 col-lg-14 col-md-14 col-sm-24">
+                        <ul class="account_header">
+                            <li><a href="/account/register" title="Đăng ký">Đăng ký</a></li>
+                            <li><a href="/account/login" title="Đăng nhập">Đăng nhập</a></li>
+
+                            <li class="d-none d-lg-inline-block"><span>&nbsp;|&nbsp;</span></li>
+                            <li class="d-none d-lg-inline-block"><a class="top-cart" href="/cart" title="Giỏ hàng">
+                                    <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng (<span
+                                        class="count_item count_item_pr hidden-count">0</span>)</a></li>
+                            <li class="d-lg-inline-block"><span>&nbsp;|&nbsp;</span></li>
+                            <li>
+                                <div class="header_search_menu">
+                                    <button class="menu-ico-bar" title="Tìm kiếm"
+                                        id="icon-menu-bar">
+                                        <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm
+                                    </button>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center header-logo">
+                    <div class="col-lg-4 col-md-4">
+                        <img width="220" height="68" src="./images/logo.webp" alt="Bean Hotel" class="lazyload loaded">
+                    </div>
+                    <div class="col-lg-20 col-md-20 header-mid">
+                        <div class="navigation-horizontal">
+                            <nav class="header-nav">
+                                <ul id="nav" class="nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html" title="Trang chủ">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="ve-chung-toi.html" title="Về chúng tôi">Về chúng
+                                            tôi</a>
+                                    </li>
+                                    <li class="nav-item has-childs  ">
+                                        <a href="phong.html" class="nav-link" title="Phòng">Phòng <i class="fa-solid fa-chevron-down"></i></a>
+                                        <i class="open_mnu down_icon"></i>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="phong.html" title="Phòng đơn">Phòng
+                                                    đơn</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="phong.html" title="Phòng đôi">Phòng
+                                                    đôi</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="phong.html" title="Phòng vip">Phòng
+                                                    vip</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item has-childs  ">
+                                        <a href="am-thuc.html" class="nav-link" title="Ẩm thực">Ẩm thực <i class="fa-solid fa-chevron-down"></i></a>
+                                        <i class="open_mnu down_icon"></i>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="am-thuc.html" title="Món ăn">Món ăn</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="am-thuc.html" title="Đồ uống">Đồ uống</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="am-thuc.html" title="Bánh ngọt">Bánh
+                                                    ngọt</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="dich-vu.html" title="Dịch vụ">Dịch vụ</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="thu-vien-anh.html" title="Thư viện ảnh">Thư viện
+                                            ảnh</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="lien-he.html" title="Liên hệ">Liên hệ</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none" style="">
+                                        <a class="nav-link" href="datphong.html" title="Đặt phòng">Đặt phòng</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="control-menu">
+                                <a href="#" id="prev"></a>
+                                <a href="#" id="next">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <div class="slider">
+            <img src="./images/slider_1.webp" alt="img">
+        </div>
+        <section class="section_about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-24 col-sm-24 col-xs-24">
+                        <div class="img-about">
+                            <img width="613" height="388" class="lazyload loaded" src="./images/img1.webp"
+                                alt="Giới thiệu về chúng tôi">
+                        </div>
+                    </div>
+                    <div class="col-xl-12 col-lg-12 col-md-24 col-sm-24 col-xs-24">
+                        <div class="content-introduce">
+                            <div class="introduce-title-inner">
+                                <h3 class="entry-title">
+                                    <span class="name-intr">Bean Hotel</span><br><span class="title-intr">Giới thiệu về
+                                        chúng tôi </span>
+                                </h3>
+                            </div>
+                            <div class="introduce-wrap">
+                                <p>Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm của bốn quận chính, nơi
+                                    được xem như trái tim và trung tâm của TP. Hồ Chí Minh. Với hệ thống phòng tiêu
+                                    chuẩn và phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới từng chi
+                                    tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho quý khách dù là thời gian nghỉ
+                                    ngơi thư giãn hay trong chuyến công tác...</p>
+                                <div class="div-xem-them clearfix">
+                                    <a href="/gioi-thieu" title="Xem thêm">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_room">
+            <div class="container">
+                <div class="title_module_index">
+                    <h2 class="h2"><a href="#" title="Phòng">Phòng</a></h2>
+                </div>
+                <div class="row row-room">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh1.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh2.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh3.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh4.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_room_double">
+            <div class="container">
+                <div class="title_module_index">
+                    <h2 class="h2"><a href="#" title="Phòng">Phòng đôi</a></h2>
+                </div>
+                <div class="row row-room">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh1.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh2.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh3.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="alper-product-item">
+                            <div class="item-product-img"><a class="image_thumb" href="/phong-don-view-thanh-pho"
+                                    title="Phòng đơn view thành phố"><img width="480" height="272"
+                                        class="lazyload loaded" src="./images/anh4.webp"
+                                        alt="Phòng đơn view thành phố"></a></div>
+                            <div class="info-room clearfix">
+                                <h3 class="name-room"><a href="/phong-don-view-thanh-pho"
+                                        title="Phòng đơn view thành phố">Phòng đơn view thành phố</a></h3>
+                                <div class="tag-room">
+                                    <ul class="list_tag_room">
+                                        <li>
+                                            <img width="32" height="32" src="./images/cafe.png" alt="Cafe Buổi Sáng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/thucan.png"
+                                                alt="Gọi Đồ Ăn Tại Phòng">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/bontam.png" alt="Bồn Tắm Hoa Sen">
+                                        </li>
+                                        <li>
+                                            <img width="32" height="32" src="./images/wifi.png"
+                                                alt="Internet Không Dây">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tag-rivew">
+                                    <ul class="list_tag_review">
+                                        <li>02 Khách</li>
+                                        <li>25m²</li>
+                                    </ul>
+                                </div>
+                                <div class="product-info-room">
+                                    <div class="price-room">
+                                        <span class="price">700.000₫/Đêm</span>
+                                    </div>
+                                    <div class="booking-room">
+                                        <a href="/phong-don-view-thanh-pho" title="Đặt phòng" class="btn-booking">ÐẶT
+                                            PHÒNG</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_room_vip">
+            <div class="container">
+                <div class="title_module_index">
+                    <h2 class="h2"><a href="phong-vip" title="Phòng VIP">Phòng VIP</a></h2>
+                </div>
+                <div class="row">
+                    <div class="col-xl-10 col-lg-10 col-md-24 col-sm-24 col-xs-24 col-sm-24">
+                        <div class="item_vip_big">
+                            <div class="img_vip_full"><a class="image_thumb" href="/phong-don-vip"
+                                    title="Phòng đơn vip"><img width="480" height="272" class="lazyload loaded"
+                                        src="./images/anhvip.webp" alt="Phòng đơn vip"></a></div>
+                            <div class="info-vip">
+                                <h3 class="name-room"><a href="/phong-don-vip" title="Phòng đơn vip">Phòng đơn vip</a>
+                                </h3>
+                                <div class="info-room">
+                                    <div class="tag-rivew-smal">
+                                        <div class="tag-rivew">
+                                            <img width="26px" height="26px" src="./images/tag-user.svg"
+                                                title="02 Khách">
+                                            <p>02 Khách</p>
+                                        </div>
+                                        <div class="tag-rivew">
+                                            <img width="26px" height="26px" src="./images/tag-meters.svg" title="35m²">
+                                            <p>35m²</p>
+                                        </div>
+                                    </div>
+                                    <div class="tag-room">
+                                        <ul class="list_tag_room">
+                                            <li>
+                                                <img width="26px" height="26px" src="./images/cafe.png"
+                                                    alt="Cafe Buổi Sáng">
+                                            </li>
+                                            <li>
+                                                <img width="26px" height="26px" src="./images/thucan.png"
+                                                    alt="Gọi Đồ Ăn Tại Phòng">
+                                            </li>
+                                            <li>
+                                                <img width="26px" height="26px" src="./images/bep.png"
+                                                    alt="Bếp Nấu Tại Phòng">
+                                            </li>
+                                            <li>
+                                                <img width="26px" height="26px" src="./images/bontam.png"
+                                                    alt="Bồn Tắm Hoa Sen">
+                                            </li>
+                                            <li>
+                                                <img width="26px" height="26px" src="./images/wifi.png"
+                                                    alt="Internet Không Dây">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="content-room-small">
+                                    Với tiêu chí ngày càng nâng cao và đáp ứng mọi nhu cầu của khách hàng chúng tôi cung
+                                    cấp thêm loại phòng đơ...
+                                </div>
+                                <div class="vip-dat-hang">
+                                    <a href="#" title="Đặt phòng" class="btn-booking">ÐẶT PHÒNG TỪ 2.500.000₫/Đêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-14 col-lg-14 col-md-24 col-sm-24 col-xs-24 col-sm-24">
+                        <div class="row row-room">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-24 col-24">
+                                <div class="item-vip-small">
+                                    <a class="image_thumb" href="#" title="Phòng gia đình"><img width="480" height="272"
+                                            class="lazyload loaded" src="./images/anhvip2.webp"
+                                            alt="Phòng gia đình"></a>
+                                    <div class="name_price clearfix">
+                                        <h3 class="name-room"><a href="/phong-gia-dinh" title="Phòng gia đình">Phòng gia
+                                                đình</a></h3>
+                                        <span class="price">3.000.000₫/Đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-24 col-24">
+                                <div class="item-vip-small">
+                                    <a class="image_thumb" href="#" title="Phòng gia đình"><img width="480" height="272"
+                                            class="lazyload loaded" src="./images/anhvip2.webp"
+                                            alt="Phòng gia đình"></a>
+                                    <div class="name_price clearfix">
+                                        <h3 class="name-room"><a href="/phong-gia-dinh" title="Phòng gia đình">Phòng gia
+                                                đình</a></h3>
+                                        <span class="price">3.000.000₫/Đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-24 col-24">
+                                <div class="item-vip-small">
+                                    <a class="image_thumb" href="#" title="Phòng gia đình"><img width="480" height="272"
+                                            class="lazyload loaded" src="./images/anhvip2.webp"
+                                            alt="Phòng gia đình"></a>
+                                    <div class="name_price clearfix">
+                                        <h3 class="name-room"><a href="/phong-gia-dinh" title="Phòng gia đình">Phòng gia
+                                                đình</a></h3>
+                                        <span class="price">3.000.000₫/Đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-24 col-24">
+                                <div class="item-vip-small">
+                                    <a class="image_thumb" href="#" title="Phòng gia đình"><img width="480" height="272"
+                                            class="lazyload loaded" src="./images/anhvip2.webp"
+                                            alt="Phòng gia đình"></a>
+                                    <div class="name_price clearfix">
+                                        <h3 class="name-room"><a href="/phong-gia-dinh" title="Phòng gia đình">Phòng gia
+                                                đình</a></h3>
+                                        <span class="price">3.000.000₫/Đêm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_am_thuc">
+            <div class="container">
+                <div class="title_module_index">
+                    <h2 class="h2">
+                        <a href="am-thuc" title="Ẩm thực">Ẩm thực</a>
+                    </h2>
+                </div>
+                <div class="am-thuc">
+                    <div class="menu-food">
+                        <div class="tab-link item has-content current" data-tab="tab-1" data-url="mon-an">
+                            <span>Món ăn</span>
+                        </div>
+                        <div class="tab-link item " data-tab="tab-2" data-url="do-uong">
+                            <span>Đồ uống</span>
+                        </div>
+                        <div class="tab-link item " data-tab="tab-3" data-url="banh-ngot">
+                            <span>Bánh ngọt</span>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="tab-content tab-1 current">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                                    <div class="item_product_main">
+                                        <form>
+                                            <div class="product-thumbnail">
+                                                <a class="image_thumb" href="#" title="Mì xào bò"><img width="480"
+                                                        height="360" class="lazyload loaded" src="./images/mixao.webp"
+                                                        alt="Mì xào bò"></a>
+                                                <div class="sale-label"><span class="smart">- 20% </span></div>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                                </h3>
+                                                <div class="price-box">
+                                                    <span class="price">80.000₫</span>
+                                                    <span class="compare-price">100.000₫</span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="show-more-pro">
+                                <a href="mon-an" title="Xem thêm" class="a-show-more">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="tab-content tab-2">
+                        </div>
+                        <div class="tab-content tab-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_tab_restaurant">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-24 col-md-24 col-xs-24">
+                        <div class="pro-tabs">
+                            <div class="e-tabs">
+                                <ul class="tabs tabs-title clearfix">
+                                    <li class="tab-link current" data-tab="tab-1-res">
+                                        <div class="item-name">
+                                            <img width="32" height="32" src="./images/nia.webp" alt="Khách sạn">
+                                            <p>Khách sạn</p>
+                                        </div>
+                                    </li>
+                                    <li class="tab-link" data-tab="tab-2-res">
+                                        <div class="item-name">
+                                            <img width="32" height="32" src="./images/hop.webp" alt="Phòng họp">
+                                            <p>Phòng họp</p>
+                                        </div>
+                                    </li>
+                                    <li class="tab-link" data-tab="tab-3-res">
+                                        <div class="item-name">
+                                            <img width="32" height="32" src="./images/lamdep.webp" alt="Làm đẹp">
+                                            <p>Làm đẹp</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="tab-float">
+                                    <div id="tab-1-res" class="tab-content content_extab current">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="title_us">
+                                                    <p class="txt_1">Tiện nghi</p>
+                                                    <p class="txt_1 txt_2">Sang trọng</p>
+                                                </div>
+                                                <div class="img_nbox"><img width="395" height="499" alt="Khách sạn"
+                                                        class="lazyload loaded" src="./images/phonghop1.webp"></div>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="title_cont_us">
+                                                    <p class="txt_title">Khách sạn</p>
+                                                    <p class="txt_title_1">Chúng tôi mang lại không gian thư giản và
+                                                        tiện nghi đáp ứng mọi nhu cầu cho bạn.</p>
+                                                    <p class="txt_title_2">Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc
+                                                        tại giao điểm của bốn quận chính, nơi được xem như trái tim và
+                                                        trung tâm của TP. Hồ Chí Minh. Với hệ thống phòng tiêu chuẩn và
+                                                        phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới
+                                                        từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho
+                                                        quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến
+                                                        công tác...</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="img_nbo_2"><img width="395" height="567" alt="Khách sạn"
+                                                        class="lazyload loaded" src="./images/phonghop2.webp"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-2-res" class="tab-content content_extab">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="title_us">
+                                                    <p class="txt_1">Rộng rãi</p>
+                                                    <p class="txt_1 txt_2">Thanh lịch</p>
+                                                </div>
+                                                <div class="img_nbox"><img width="395" height="499" alt="Phòng họp"
+                                                        class="lazyload" src="./images/phonghop1.webp"></div>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="title_cont_us">
+                                                    <p class="txt_title">Phòng họp</p>
+                                                    <p class="txt_title_1">Chúng tôi mang lại không gian thư giản và
+                                                        tiện nghi đáp ứng mọi nhu cầu cho bạn.</p>
+                                                    <p class="txt_title_2">Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc
+                                                        tại giao điểm của bốn quận chính, nơi được xem như trái tim và
+                                                        trung tâm của TP. Hồ Chí Minh. Với hệ thống phòng tiêu chuẩn và
+                                                        phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới
+                                                        từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho
+                                                        quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến
+                                                        công tác...</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="img_nbo_2"><img width="395" height="567" alt="Phòng họp"
+                                                        class="lazyload loaded" src="./images/phonghop2.webp"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-3-res" class="tab-content content_extab">
+                                        <div class="row">
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="title_us">
+                                                    <p class="txt_1">Khỏe và đẹp</p>
+                                                    <p class="txt_1 txt_2">Thư giản</p>
+                                                </div>
+                                                <div class="img_nbox"><img width="395" height="499" alt="Làm đẹp"
+                                                        class="lazyload" src="images/phonghop1.webp"></div>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="title_cont_us">
+                                                    <p class="txt_title">Làm đẹp</p>
+                                                    <p class="txt_title_1">Chúng tôi mang lại không gian thư giản và
+                                                        tiện nghi đáp ứng mọi nhu cầu cho bạn.</p>
+                                                    <p class="txt_title_2">Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc
+                                                        tại giao điểm của bốn quận chính, nơi được xem như trái tim và
+                                                        trung tâm của TP. Hồ Chí Minh. Với hệ thống phòng tiêu chuẩn và
+                                                        phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới
+                                                        từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho
+                                                        quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến
+                                                        công tác...</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24">
+                                                <div class="img_nbo_2"><img width="395" height="567" alt="Làm đẹp"
+                                                        class="lazyload loaded" src="./images/phonghop2.webp"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="secttion_blogs">
+            <div class="container">
+                <div class="title_module_index">
+                    <h2 class="h2">
+                        <a href="tin-tuc" title="Hiểu biết khách sạn">Hiểu biết khách sạn</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row row-room">
+
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-24 col-24">
+                        <div class="item_blog_index clearfix">
+                            <div class="img-blog">
+                                <a class="image-blog" href="" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">
+
+                                    <img width="480" height="288" src="./images/hieubietks1.webp"
+                                        alt="10 xu hướng thịnh hành trong ngành khách sạn 2022"
+                                        class="lazyload img-responsive loaded">
+
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <h3><a href="" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">10 xu hướng
+                                        thịnh hành
+                                        trong ngành khách sạn 2022</a></h3>
+                                <p class="blog_description">Không gian ngoài trời mở rộng hơn, nâng cấp công nghệ để hạn
+                                    chế tối đa tiếp xúc là những xu hướng mới nhiều khách...</p>
+                                <p class="update_date clearfix">
+                                    <span class="user_name">By Bean Hotel</span>
+                                    <span class="user_date"> 06/12/2022</span>
+                                </p>
+                                <a class="btn blog_read_more" href="" title="Đọc thêm">Ðọc Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-24 col-24">
+                        <div class="item_blog_index clearfix">
+                            <div class="img-blog">
+                                <a class="image-blog" href=""
+                                    title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">
+
+                                    <img width="480" height="288" src="./images/hieubietks2.webp"
+                                        class="lazyload img-responsive loaded">
+
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <h3><a href="" title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">Những điều
+                                        kiêng kị
+                                        khi ở khách sạn mà bạn nên biết</a></h3>
+                                <p class="blog_description">Để không gặp nhiều phiền toái và giữ an toàn cho chính bản
+                                    thân trong mỗi chuyến đi, bạn nên cẩn thận tìm hiểu một...</p>
+                                <p class="update_date clearfix">
+                                    <span class="user_name">By Bean Hotel</span>
+                                    <span class="user_date"> 06/12/2022</span>
+                                </p>
+                                <a class="btn blog_read_more" href="" title="Đọc thêm">Ðọc
+                                    Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-24 col-24">
+                        <div class="item_blog_index clearfix">
+                            <div class="img-blog">
+                                <a class="image-blog" href=""
+                                    title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">
+
+                                    <img width="480" height="288" src="./images/hieubietks3.webp"
+                                        alt="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng"
+                                        class="lazyload img-responsive loaded">
+
+                                </a>
+                            </div>
+                            <div class="blog_content">
+                                <h3><a href="" title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">Ý nghĩa
+                                        việc
+                                        khách sạn để chocolate lên gối khi dọn phòng</a></h3>
+                                <p class="blog_description">Các quản lý khách sạn phát hiện ra dịch vụ này nhận được
+                                    nhiều lời khen từ khách thuê phòng hơn bất kỳ hoạt động...</p>
+                                <p class="update_date clearfix">
+                                    <span class="user_name">By Bean Hotel</span>
+                                    <span class="user_date"> 06/12/2022</span>
+                                </p>
+                                <a class="btn blog_read_more" href="" title="Đọc thêm">Ðọc Thêm</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer lazyload">
+        <div class="footer-top hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Hotline hỗ trợ</h3>
+                            <div class="phone_sup">
+                                <a title="1900 6750" href="tel:19006750">1900 6750</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Email hỗ trợ</h3>
+                            <div class="phone_sup">
+                                <a title="support@sapo.vn" href="mailto:support@sapo.vn">support@sapo.vn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Đăng ký nhận tin</h3>
+                            <div class="subscribe_form">
+                                <form action="" method="post">
+                                    <input type="email" class="form-control" value="" placeholder="Email của bạn"
+                                        name="EMAIL" id="mail">
+                                    <button name="subscribe" id="subscribe">Đăng ký</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Kết nối chúng tôi</h3>
+                            <div class="social-sup">
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#" title="Facebook">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#" title="Twitter">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#" title="Instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="#" title="Youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_showroom hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row sc-showrooms">
+                    <div class="col-xl-24 col-lg-24 col-md-24 col-sm-24 col-xs-24 col-24">
+                        <div class="col-inner text-center">
+                            <p class="rooms-title">
+                                <a href="/he-thong-chi-nhanh" title="Hệ thống chi nhánh">
+                                    <i class="fa-solid fa-house"></i> Hệ thống chi nhánh
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-address">
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                                <p>Hotline: <a href="tel:0982847974" title="0982.847.974">0982.847.974 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Đà Lạt : 94 Hoàng Hoa Thám, Phường 10</p>
+                                <p>Hotline: <a href="tel:0263306997" title="0263.306.997">0263.306.997 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Nha Trang : 02 Phạm Văn Đồng, Phường Vĩnh Phước</p>
+                                <p>Hotline: <a href="tel:0903307497" title="0903.307.497">0903.307.497 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Phú Quốc : 147 Trần Hưng Đạo, Dương Đông</p>
+                                <p>Hotline: <a href="tel:0903307447" title="0903.307.447">0903.307.447 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel ĐăkLăk : 38 Huỳnh Thúc Kháng, Phường Tân Lợi</p>
+                                <p>Hotline: <a href="tel:0903307448" title="0903.307.448">0903.307.448 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Hà Nội : 266 Đội Cấn, Ba Đình</p>
+                                <br>
+                                <p>Hotline: <a href="tel:0903307449" title="0903.307.449">0903.307.449 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-xs-24">
+                        <div class="logo-foo">
+                            <a href="/" class="logo-footer" title="Bean Hotel"><img width="220" height="68"
+                                    src="./images/logo_foo.webp" alt="Bean Hotel" class="lazyload loaded"></a>
+                        </div>
+                        <div class="content-des">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp
+                            chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung.
+                            Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong
+                            khuôn viên.</div>
+                    </div>
+                    <div class="col-xs-24 col-md-12 col-lg-8 footer-click">
+                        <h4 class="title-menu clicked">
+                            Bài viết mới
+                        </h4>
+                        <ul class="list-menu toggle-mn hidden-mob">
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">10 xu hướng
+                                            thịnh hành trong ngành khách sạn 2022</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="" title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">Những
+                                            điều kiêng kị khi ở khách sạn mà bạn nên biết</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="" title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">Ý
+                                            nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-24 col-md-8 col-lg-4 footer-click">
+                        <h4 class="title-menu clicked">
+                            Chính sách
+                        </h4>
+                        <ul class="list-menu toggle-mn hidden-mob">
+                            <li class="li_menu">
+                                <a href="/chinh-sach-nhan-phong" title="Chính sách nhận phòng">Chính sách nhận phòng</a>
+                            </li>
+                            <li class="li_menu">
+                                <a href="/chinh-sach-tra-phong" title="Chính sách trả phòng">Chính sách trả phòng</a>
+                            </li>
+                            <li class="li_menu">
+                                <a href="/chinh-sach-thanh-toan" title="Chính sách thanh toán">Chính sách thanh toán</a>
+                            </li>
+                            <li class="li_menu">
+                                <a href="/chinh-sach-bao-mat" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-24 col-md-8 col-lg-6 footer-click">
+                        <h4 class="title-menu">
+                            Hình thức thanh toán
+                        </h4>
+                        <div class="content-des"><img width="283" height="106" src="./images/card.webp"
+                                alt="Hình thức thanh toán"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Bản quyền thuộc về Mr. Bean | Cung cấp bởi Sapo</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab-link');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    const tabId = this.getAttribute('data-tab');
+
+                    // Remove 'current' class from all tabs and contents
+                    tabs.forEach(item => item.classList.remove('current'));
+                    contents.forEach(item => item.classList.remove('current'));
+
+                    // Add 'current' class to the clicked tab and corresponding content
+                    this.classList.add('current');
+                    document.getElementById(tabId).classList.add('current');
+                });
+            });
+        });
+    </script>
+</body>
+</body>
+
+</html>

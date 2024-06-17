@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-10 col-md-10 hidden-xs"><i class="fa fa-globe"></i> Chào mừng bạn đến
+                        với
+                        Bean Hotel!</div>
+                    <div class="col-xl-14 col-lg-14 col-md-14 col-sm-24">
+                        <ul class="account_header">
+                            <li><a href="/account/register" title="Đăng ký">Đăng ký</a></li>
+                            <li><a href="/account/login" title="Đăng nhập">Đăng nhập</a></li>
+
+                            <li class="d-none d-lg-inline-block"><span>&nbsp;|&nbsp;</span></li>
+                            <li class="d-none d-lg-inline-block"><a class="top-cart" href="/cart" title="Giỏ hàng">
+                                    <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng (<span
+                                        class="count_item count_item_pr hidden-count">0</span>)</a></li>
+                            <li class="d-lg-inline-block"><span>&nbsp;|&nbsp;</span></li>
+                            <li>
+                                <div class="header_search_menu">
+                                    <button class="menu-ico-bar" title="Tìm kiếm"
+                                        id="icon-menu-bar">
+                                        <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm
+                                    </button>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center header-logo">
+                    <div class="col-lg-4 col-md-4">
+                        <img width="220" height="68" src="./images/logo.webp" alt="Bean Hotel" class="lazyload loaded">
+                    </div>
+                    <div class="col-lg-20 col-md-20 header-mid">
+                        <div class="navigation-horizontal">
+                            <nav class="header-nav">
+                                <ul id="nav" class="nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html" title="Trang chủ">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="ve-chung-toi.html" title="Về chúng tôi">Về chúng
+                                            tôi</a>
+                                    </li>
+                                    <li class="nav-item has-childs  ">
+                                        <a href="phong.html" class="nav-link" title="Phòng">Phòng <i class="fa-solid fa-chevron-down"></i></a>
+                                        <i class="open_mnu down_icon"></i>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="phong.html" title="Phòng đơn">Phòng
+                                                    đơn</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="phong.html" title="Phòng đôi">Phòng
+                                                    đôi</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="phong.html" title="Phòng vip">Phòng
+                                                    vip</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item active has-childs  ">
+                                        <a href="am-thuc.html" class="nav-link" title="Ẩm thực">Ẩm thực <i class="fa-solid fa-chevron-down"></i></a>
+                                        <i class="open_mnu down_icon"></i>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="am-thuc.html" title="Món ăn">Món ăn</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="am-thuc.html" title="Đồ uống">Đồ uống</a>
+                                            </li>
+                                            <li class="nav-item-lv2">
+                                                <a class="nav-link" href="am-thuc.html" title="Bánh ngọt">Bánh
+                                                    ngọt</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="dich-vu.html" title="Dịch vụ">Dịch vụ</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="thu-vien-anh.html" title="Thư viện ảnh">Thư viện
+                                            ảnh</a>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="lien-he.html" title="Liên hệ">Liên hệ</a>
+                                    </li>
+                                    <li class="nav-item d-lg-none" style="">
+                                        <a class="nav-link" href="datphong.html" title="Đặt phòng">Đặt phòng</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="control-menu">
+                                <a href="#" id="prev"></a>
+                                <a href="#" id="next">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <section class="bread-crumb">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="home">
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li>Ẩm thực</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h1 class="title-page">Ẩm thực
+                    </h1>
+                </div>
+                <div class="tab-content tab-1 current">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 product-col">
+                            <div class="item_product_main">
+                                <form>
+                                    <div class="product-thumbnail">
+                                        <a class="image_thumb" href="#" title="Mì xào bò"><img width="480" height="360"
+                                                class="lazyload loaded" src="./images/mixao.webp" alt="Mì xào bò"></a>
+                                        <div class="sale-label"><span class="smart">- 20% </span></div>
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#" title="Mì xào bò">Mì xào bò</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">80.000₫</span>
+                                            <span class="compare-price">100.000₫</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-pagination">
+                        <div class="pagination-am-thuc">
+                            <a class="page-item active" href="#">1</a>
+                            <a class="page-item" href="#">2</a>
+                            <a class="page-item" href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <footer class="footer lazyload">
+        <div class="footer-top hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Hotline hỗ trợ</h3>
+                            <div class="phone_sup">
+                                <a title="1900 6750" href="tel:19006750">1900 6750</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Email hỗ trợ</h3>
+                            <div class="phone_sup">
+                                <a title="support@sapo.vn" href="mailto:support@sapo.vn">support@sapo.vn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Đăng ký nhận tin</h3>
+                            <div class="subscribe_form">
+                                <form action="" method="post">
+                                    <input type="email" class="form-control" value="" placeholder="Email của bạn"
+                                        name="EMAIL" id="mail">
+                                    <button name="subscribe" id="subscribe">Đăng ký</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-24">
+                        <div class="div-content-sup">
+                            <h3 class="title_sup">Kết nối chúng tôi</h3>
+                            <div class="social-sup">
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#" title="Facebook">
+                                            <i class="fa-brands fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#" title="Twitter">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#" title="Instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="#" title="Youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section_showroom hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row sc-showrooms">
+                    <div class="col-xl-24 col-lg-24 col-md-24 col-sm-24 col-xs-24 col-24">
+                        <div class="col-inner text-center">
+                            <p class="rooms-title">
+                                <a href="/he-thong-chi-nhanh" title="Hệ thống chi nhánh">
+                                    <i class="fa-solid fa-house"></i> Hệ thống chi nhánh
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-address">
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                                <p>Hotline: <a href="tel:0982847974" title="0982.847.974">0982.847.974 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Đà Lạt : 94 Hoàng Hoa Thám, Phường 10</p>
+                                <p>Hotline: <a href="tel:0263306997" title="0263.306.997">0263.306.997 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Nha Trang : 02 Phạm Văn Đồng, Phường Vĩnh Phước</p>
+                                <p>Hotline: <a href="tel:0903307497" title="0903.307.497">0903.307.497 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Phú Quốc : 147 Trần Hưng Đạo, Dương Đông</p>
+                                <p>Hotline: <a href="tel:0903307447" title="0903.307.447">0903.307.447 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel ĐăkLăk : 38 Huỳnh Thúc Kháng, Phường Tân Lợi</p>
+                                <p>Hotline: <a href="tel:0903307448" title="0903.307.448">0903.307.448 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-8 col-lg-8 col-md-8 col-sm-24 col-xs-24  col-24">
+                        <div class="address-hot-line">
+                            <div class="hot-line">
+                                <p>Hotel Hà Nội : 266 Đội Cấn, Ba Đình</p>
+                                <br>
+                                <p>Hotline: <a href="tel:0903307449" title="0903.307.449">0903.307.449 </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-24 col-xs-24">
+                        <div class="logo-foo">
+                            <a href="/" class="logo-footer" title="Bean Hotel"><img width="220" height="68"
+                                    src="./images/logo_foo.webp" alt="Bean Hotel" class="lazyload loaded"></a>
+                        </div>
+                        <div class="content-des">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp
+                            chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung.
+                            Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong
+                            khuôn viên.</div>
+                    </div>
+                    <div class="col-xs-24 col-md-12 col-lg-8 footer-click">
+                        <h4 class="title-menu clicked">
+                            Bài viết mới
+                        </h4>
+                        <ul class="list-menu toggle-mn hidden-mob">
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">10 xu hướng
+                                            thịnh hành trong ngành khách sạn 2022</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="" title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">Những
+                                            điều kiêng kị khi ở khách sạn mà bạn nên biết</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="" title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">Ý
+                                            nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-24 col-md-8 col-lg-4 footer-click">
+                        <h4 class="title-menu clicked">
+                            Chính sách
+                        </h4>
+                        <ul class="list-menu toggle-mn hidden-mob">
+                            <li class="li_menu">
+                                <a href="/chinh-sach-nhan-phong" title="Chính sách nhận phòng">Chính sách nhận phòng</a>
+                            </li>
+                            <li class="li_menu">
+                                <a href="/chinh-sach-tra-phong" title="Chính sách trả phòng">Chính sách trả phòng</a>
+                            </li>
+                            <li class="li_menu">
+                                <a href="/chinh-sach-thanh-toan" title="Chính sách thanh toán">Chính sách thanh toán</a>
+                            </li>
+                            <li class="li_menu">
+                                <a href="/chinh-sach-bao-mat" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-24 col-md-8 col-lg-6 footer-click">
+                        <h4 class="title-menu">
+                            Hình thức thanh toán
+                        </h4>
+                        <div class="content-des"><img width="283" height="106" src="./images/card.webp"
+                                alt="Hình thức thanh toán"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© Bản quyền thuộc về Mr. Bean | Cung cấp bởi Sapo</p>
+        </div>
+    </footer>
+</body>
+</body>
+
+</html>
